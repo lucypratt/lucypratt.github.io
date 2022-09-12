@@ -20,8 +20,6 @@ nav {
     padding: 0; }
   nav li {
     list-style-type: none; }
-  nav li.active {
-    background-color: #c2c2c2; }
   nav a {
     background-color: #292929;
     display: block;
@@ -33,6 +31,8 @@ nav {
   nav a:hover {
     background-color: #c2c2c2;
     text-decoration: underline; }
+  nav li.active {
+    background-color: #c2c2c2; }
 
 div.parent {
   margin: 0;

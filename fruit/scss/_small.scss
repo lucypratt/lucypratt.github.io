@@ -25,9 +25,7 @@ nav {
     background-color: $primaryColor;
     ul{margin:0; padding: 0;}
     li {list-style-type: none;}
-    li.active {
-        background-color: lighten($primaryColor, 50%);
-       }
+   
     
     a {
         background-color: darken($primaryColor, 10%);
@@ -39,6 +37,10 @@ nav {
        
     }
     a:hover {background-color: lighten($primaryColor, 50%); text-decoration: underline;}
+
+    li.active {
+        background-color: lighten($primaryColor, 50%);
+       }
    
 
 }
