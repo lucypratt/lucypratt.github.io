@@ -317,7 +317,7 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: 'Poppins', sans-serif; }
 
 /*----------- HEADER --------------*/
 .topbarWrapper {
@@ -343,17 +343,19 @@ body {
   background-image: center;
   height: 100%; }
 
-.h1Wrapper {
-  background-color: rgba(0, 0, 0, 0.3); }
-
 header {
   height: 140px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
-  header h1 {
-    padding: .5rem, 2%; }
+
+div.h1Wrapper {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+div.bottombar {
+  margin: auto;
+  max-width: 60rem; }
 
 /*----------- NAVIGATION --------------*/
 div.navWrapper {
@@ -362,10 +364,11 @@ div.navWrapper {
 nav ul {
   display: none;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin: auto; }
   nav ul li a {
     display: block;
-    padding: .9rem 2%;
+    padding: .9rem 4%;
     text-decoration: none;
     color: white; }
 nav ul.open {

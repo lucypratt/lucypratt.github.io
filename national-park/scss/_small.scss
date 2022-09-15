@@ -8,7 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -41,9 +41,7 @@ body {
     background-image: center;
     height: 100%;
 }
-.h1Wrapper {
-    background-color: rgba(0, 0, 0, .3);
-}
+
 header {
 height: 140px;
    color:white;
@@ -51,16 +49,16 @@ height: 140px;
    flex-direction: column;
    justify-content: flex-end;
   
-   h1 {
-
-    padding: .5rem, 2%;
-
-
-    }
-  
 }
 
-
+div.h1Wrapper {
+    background-color: rgba(0, 0, 0, .3);
+}
+div.bottombar {
+  
+    margin:auto;
+    max-width: 60rem;
+}
 
 
 /*----------- NAVIGATION --------------*/
@@ -74,10 +72,11 @@ nav {
         display: none;
         padding: 0;
         list-style: none;
+        margin:auto;
         li a {
            
             display: block;
-            padding: .9rem 2%;
+            padding: .9rem 4%;
             text-decoration: none;
             color: white;
         
