@@ -112,7 +112,7 @@ main {
         text-align: center;
         padding-bottom: 3rem;
         section {
-            background-color: rgb(97, 45, 0);
+            background-color: $mainOrange;
             color: #fff;
             padding: 1rem 0;
             border-top-left-radius: 7px;
@@ -139,7 +139,7 @@ main {
         }
         a {
             display: block;
-            background-color: rgb(97, 45, 0);
+            background-color: $mainOrange;
             color: white;
             text-decoration: none;
            margin: 1rem 4vw;
