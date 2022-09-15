@@ -491,6 +491,8 @@ footer {
     margin: auto; }
   nav li {
     padding: .5rem 2%; }
+  nav li a {
+    padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
   main .card {
