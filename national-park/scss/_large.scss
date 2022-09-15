@@ -1,0 +1,55 @@
+nav, main, footer{
+        max-width: 60rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+.topbar {
+        max-width: 60rem;
+        button {
+                display: none;
+        }
+}
+.bottombar {
+        max-width: 60rem;
+}
+.headerWrapper {
+        background-image: url(../images/header-large.jpg);
+        
+        background-size: cover;
+    
+    }
+    header {
+        height: 400px;
+    }
+    
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+        
+        ul, ul.open {
+                display: flex;
+                justify-content: right;
+                margin: auto;
+        }
+        li {
+                padding: .5rem 2%;
+        }
+}
+
+/*----------- MAIN --------------*/
+main {
+        .card {
+            flex-basis: 31%;
+        }
+    }
+
+
+/*----------- FOOTER --------------*/
+    
