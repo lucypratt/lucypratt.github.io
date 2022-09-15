@@ -340,7 +340,6 @@ body {
 
 .headerWrapper {
   background-image: url(../images/header-small.jpg);
-  background-image: center;
   height: 100%; }
 
 header {
