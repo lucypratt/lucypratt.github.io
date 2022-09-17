@@ -10,13 +10,8 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 100px 300px;
+  grid-template-columns: 100px auto;
   padding: 1rem 2%; }
-  header h1 {
-    margin: 0; }
-  header h2 {
-    font-size: 1rem;
-    margin: 0; }
 
 nav {
   background-color: #424242; }
@@ -36,9 +31,8 @@ nav {
   nav a:hover {
     background-color: #c2c2c2;
     text-decoration: underline; }
-
-nav li.active {
-  background-color: #c2c2c2; }
+  nav li.active {
+    background-color: #c2c2c2; }
 
 div.parent {
   margin: 0;
@@ -81,3 +75,5 @@ footer {
   div.parent figure {
     flex-basis: 21%; } }
 /* end of media query */
+
+/*# sourceMappingURL=styles.css.map */

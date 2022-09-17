@@ -15,8 +15,16 @@ body {
 header {
   
     display: grid;
-    grid-template-columns: 100px, auto;
+    grid-template-columns: 100px 300px;
     padding: 1rem 2%;
+    
+    h1 {
+        margin: 0;
+    }
+    h2 {
+        font-size: 1rem;
+        margin: 0;
+    }
 
 }
 
@@ -38,12 +46,13 @@ nav {
     }
     a:hover {background-color: lighten($primaryColor, 50%); text-decoration: underline;}
 
-    li.active {
-        background-color: lighten($primaryColor, 50%);
-       }
+   
    
 
 }
+nav li.active {
+    background-color: lighten($primaryColor, 50%);
+   }
 
 div.parent {
     margin: 0;
