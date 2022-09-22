@@ -385,9 +385,21 @@ nav ul li.active a {
   color: #fff; }
 
 /*----------- MAIN --------------*/
-main {
-  padding: 0 2%;
-  min-height: 10rem; }
+main picture.banner {
+  display: block;
+  margin: 0;
+  width: 100%; }
+  main picture.banner img {
+    width: 100%; }
+main div.content {
+  margin: 1rem; }
+main picture.body {
+  display: block;
+  float: right;
+  margin: 0 0 .5rem .5rem;
+  width: 50%; }
+  main picture.body img {
+    width: 100%; }
 
 /*----------- FOOTER --------------*/
 footer {

@@ -86,8 +86,35 @@ nav ul li.active a {
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
-    min-height: 10rem;
+   
+
+    picture.banner {
+        display: block;
+        margin: 0;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+       
+   
+ div.content {
+    margin: 1rem;
+ }
+ 
+ picture.body {
+    display: block;
+    float: right;
+    margin: 0 0 .5rem .5rem;
+    width: 50%;
+    img {
+        width: 100%;
+    }
+
+}
+
+
+    
 }
 
 
