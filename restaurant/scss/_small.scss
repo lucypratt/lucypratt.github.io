@@ -1,0 +1,108 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    display: flex;
+    align-items: center;
+    padding: .5rem 2%;
+    background-color: $primaryColor;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: $secondaryColor;
+    button {
+        padding: .5rem;
+        background: transparent;
+        border: none;
+        font-size: 1rem;
+        color:#fff;
+
+        span:nth-child(1){
+            display:block;
+        }
+        span:nth-child(2){
+            display:none;
+        }
+    }
+    button.open {
+        span:nth-child(1){
+            display:none;
+        }
+        span:nth-child(2){
+            display:block;
+        }
+
+    }
+    button:hover {
+        background-color: black;
+    }
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    display: none;
+}
+ul.open {
+display: block;
+}
+
+nav ul li a {
+    display: block;
+    background-color: $secondaryColor;
+    color: #eee;
+ 
+    padding: .5rem 2%;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: left;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: lighten($secondaryColor, 20%);
+    color: #333;
+}
+nav ul li.active a {
+    background-color: darken($secondaryColor, 30%);
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $primaryColor;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
