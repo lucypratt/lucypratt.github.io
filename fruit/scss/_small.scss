@@ -30,9 +30,13 @@ header {
 
 
 nav {
+   
     background-color: $primaryColor;
+   
+
     ul{margin:0; padding: 0;}
-    li {list-style-type: none;}
+    li {
+        list-style-type: none;}
    
     
     a {
@@ -46,13 +50,9 @@ nav {
     }
     a:hover {background-color: lighten($primaryColor, 50%); text-decoration: underline;}
 
-   
-   
-
 }
-nav li.active {
-    background-color: lighten($primaryColor, 50%);
-   }
+
+
 
 div.parent {
     margin: 0;
@@ -89,4 +89,8 @@ footer {
     content: "";
     display: table;
     clear: both;
+  }
+
+  nav ul li.active {
+    background-color: red;
   }
