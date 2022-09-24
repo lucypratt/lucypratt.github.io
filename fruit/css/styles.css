@@ -33,12 +33,12 @@ nav {
     color: #eee;
     text-align: right;
     text-decoration: none; }
+  nav ul li.active a {
+    background-color: black;
+    color: white; }
   nav a:hover {
     background-color: #c2c2c2;
     text-decoration: underline; }
-
-nav li.active {
-  background-color: #c2c2c2; }
 
 div.parent {
   margin: 0;
