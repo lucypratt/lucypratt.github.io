@@ -39,15 +39,21 @@ body {
 .headerWrapper {
     background-image: url(../images/header-small.jpg);
     
-    height: 100%;
+   
 }
 
 header {
-height: 140px;
+
    color:white;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
+  
+  
+   
+   h1 {
+    padding-left: 2%;
+   }
   
 }
 

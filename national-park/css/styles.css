@@ -339,15 +339,15 @@ body {
     background-color: black; }
 
 .headerWrapper {
-  background-image: url(../images/header-small.jpg);
-  height: 100%; }
+  background-image: url(../images/header-small.jpg); }
 
 header {
-  height: 140px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
+  header h1 {
+    padding-left: 2%; }
 
 div.h1Wrapper {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -367,11 +367,13 @@ nav ul {
   margin: auto; }
   nav ul li a {
     display: block;
-    padding: .9rem 4%;
+    padding: .9rem 1rem;
     text-decoration: none;
     color: white; }
 nav ul.open {
   display: block; }
+nav ul li a {
+  padding-left: 1rem; }
 nav ul li.active a {
   background-color: black;
   color: white; }
@@ -452,7 +454,11 @@ footer {
     height: 100%; }
 
   header {
-    height: 240px; }
+    padding-top: 6rem; }
+
+  div.bottombar {
+    margin: auto;
+    max-width: 60rem; }
 
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/

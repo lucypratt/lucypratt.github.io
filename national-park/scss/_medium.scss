@@ -11,8 +11,14 @@
    height: 100%;
 }
 header {
-    height: 240px;
+    padding-top: 6rem;
 
+    
+}
+div.bottombar {
+  
+    margin:auto;
+    max-width: 60rem;
 }
 
 
@@ -27,6 +33,7 @@ main {
         flex-basis: 48%;
     }
 }
+
 
 /*----------- FOOTER --------------*/
     
