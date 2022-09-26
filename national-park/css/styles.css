@@ -367,7 +367,6 @@ nav ul {
   margin: auto; }
   nav ul li a {
     display: block;
-    padding: .9rem 1rem;
     text-decoration: none;
     color: white; }
 nav ul.open {
@@ -494,10 +493,8 @@ footer {
     display: flex;
     justify-content: right;
     margin: auto; }
-  nav li {
-    padding: .5rem 2%; }
   nav li a {
-    padding: .5rem 1rem; }
+    padding: 1rem 1rem; }
 
   /*----------- MAIN --------------*/
   main .card {
