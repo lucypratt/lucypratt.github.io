@@ -73,10 +73,11 @@ nav {
         padding: 0;
         list-style: none;
         margin:auto;
+        
         li a {
            
             display: block;
-            padding: .9rem 4%;
+            padding: .9rem 1rem;
             text-decoration: none;
             color: white;
         
@@ -85,6 +86,7 @@ nav {
     ul.open {
         display: block;
     }
+    ul li a {padding-left: 1rem;}
 ul li.active a {background-color: black; color: white;}
 }
 nav ul li a:hover {

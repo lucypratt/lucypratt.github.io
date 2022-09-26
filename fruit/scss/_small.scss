@@ -40,7 +40,7 @@ nav {
    
     
     a {
-        background-color: darken($primaryColor, 10%);
+        background-color: darken($primaryColor, 5%);
         display: block;
         padding: .8rem 2vw; /*44px min*/
         color: #eee;
@@ -49,7 +49,7 @@ nav {
        
     }
     ul li.active a {background-color: black; color: white;}
-    a:hover {background-color: lighten($primaryColor, 50%); text-decoration: underline;}
+   ul li a:hover {background-color: lighten($primaryColor, 50%); text-decoration: underline;}
     
 
 
