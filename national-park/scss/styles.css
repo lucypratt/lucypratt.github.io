@@ -367,7 +367,6 @@ nav ul {
   margin: auto; }
   nav ul li a {
     display: block;
-    padding: 1rem 2%;
     text-decoration: none;
     color: white; }
 nav ul.open {
@@ -503,3 +502,5 @@ footer {
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
+
+/*# sourceMappingURL=styles.css.map */

@@ -42,13 +42,13 @@ nav {
     a {
         background-color: darken($primaryColor, 5%);
         display: block;
-        padding: .8rem 2vw; /*44px min*/
+        padding: 1rem 2vw; /*44px min*/
         color: #eee;
         text-align: right;
         text-decoration: none;
        
     }
-    ul li.active a {background-color: black; color: white;}
+    ul li.active a {background-color: white; color: black;}
    ul li a:hover {background-color: lighten($primaryColor, 50%); text-decoration: underline;}
     
 
