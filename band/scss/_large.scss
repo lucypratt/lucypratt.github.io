@@ -1,0 +1,36 @@
+header, main, footer {
+        max-width: 75rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+        justify-content: end;
+        margin-right: 0;
+        button {
+                display: none;
+        }
+        
+        ul, ul.open {
+                position: relative;
+                margin: auto;
+                display: flex;
+                width: 100%;
+              
+        }
+}
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
