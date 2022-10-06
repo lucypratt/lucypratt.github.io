@@ -341,7 +341,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    padding: .5rem 2bw .5rem 1rem;
+    padding: .5rem 2vw .5rem 1rem;
     background: transparent;
     border: none;
     font-size: 1.5rem;
@@ -494,8 +494,6 @@ footer {
       position: relative;
       display: flex;
       width: 100%; }
-      nav ul a, nav ul.open a {
-        border-left-style: 1px solid black; }
 
   /*----------- MAIN --------------*/
   main h1, main h2 {
