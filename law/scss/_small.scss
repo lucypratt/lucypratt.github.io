@@ -80,7 +80,7 @@ nav {
         text-align: right;
     }
     ul li a:hover {
-        color: white;
+        color: black;
         background-color: $secondaryColor;
     }
     ul li.active a {
@@ -146,8 +146,15 @@ main {
                padding: 1rem .5rem;
         
                font-size: 12px;
+               :hover {
+                    color: black;
+                    background-color: $primaryColor;
+               }
                
-            }}
+            }
+        
+        }
+        
 
 
             div.cta {

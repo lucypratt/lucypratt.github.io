@@ -155,7 +155,7 @@ nav {
     text-decoration: none;
     text-align: right; }
   nav ul li a:hover {
-    color: white;
+    color: black;
     background-color: #939799; }
   nav ul li.active a {
     background-color: white; }
@@ -209,6 +209,9 @@ main div.flexed {
       margin: 1rem 2vw;
       padding: 1rem .5rem;
       font-size: 12px; }
+      main div.flexed .card a :hover {
+        color: black;
+        background-color: #C0CCC3; }
   main div.flexed div.cta {
     text-align: center;
     margin: 0;
