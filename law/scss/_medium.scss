@@ -1,0 +1,47 @@
+/*HEADER*/
+#headerWrapper {
+    border-bottom: 1px solid #eee;
+}
+a#phone {
+    display: block;
+    margin-right: 2vw;
+    color: $secondaryColor;
+    text-decoration: none;
+    font-weight: $normalWeight;
+    font-size: 1.5rem;
+    :hover {
+        color: black;
+    }
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+div#menu, div#closex {display: none;}
+nav {
+    height: auto;
+    ul {display: flex;
+    justify-content: end;
+border: none;}
+
+li {
+    border: none;
+}
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+}
+div.dissapear {
+    display: none;
+}
+footer {
+    div.social {
+        margin: 0 30%;
+    }
+}
+
+/*STRUCTURE*/
+div#headerWrapper {grid-row-start: 1;}
+div#navWrapper {grid-row-start: 2;}
+div#mainWrapper {grid-row-start: 3;}
+div#footerWrapper {grid-row-start: 4;}
