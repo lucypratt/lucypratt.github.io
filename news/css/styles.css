@@ -416,6 +416,8 @@ footer {
     text-align: left; }
     footer .footerP div {
       padding: 1vh 2vw; }
+  footer div.footerP a:hover {
+    color: black; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
