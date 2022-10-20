@@ -1,0 +1,140 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: $primaryColor;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: $secondaryColor;
+   button {
+    height: 44px;
+    width: 44px;
+    background: none;
+    border: none;
+    position: relative;
+    .line {
+        position: absolute;
+        height: 2px;
+        width: 60%;
+        left: 20%;
+        background-color: white;
+        transition: all .3s ease;
+    }
+    .top {
+        top: 29%;
+    }
+    .middle {top: 48%;}
+    .bottom {top: 67%;}
+   }
+
+   #navButton.open {
+    .top {
+        transform: rotate(45deg);
+        top: 48%;
+    }
+    .middle, .bottom {
+        transform: rotate(-45deg);
+        top: 48%;
+    }
+   }
+}
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.open {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    background-color: $secondaryColor;
+    color: $accentColor;
+ 
+    padding: .5rem 2%;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: left;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: $accentColor;
+    color: white;
+}
+nav ul li.active a {
+    background-color: #7b9fcf;
+    color: $accentColor;
+}
+/*----------- MAIN --------------*/
+main {
+   
+   div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    p {
+        display: block;
+        text-align: center;
+        font-size: .75rem;
+    }
+    
+    img {width: 100%;}
+.tease, .lead {
+    padding: .5rem 2vw;
+}
+.lead {grid-column: 1 / span 2;}
+
+
+   }
+
+
+
+
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $primaryColor;
+    color: $accentColor;
+    padding: .5rem 2%;
+    text-align: center;
+
+    .footerP {
+        display: grid;
+        text-align: left;
+        div {
+            padding: 1vh 2vw;
+        }
+    }
+
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
