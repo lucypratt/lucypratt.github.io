@@ -416,6 +416,9 @@ footer {
     text-align: left; }
     footer .footerP div {
       padding: 1vh 2vw; }
+  footer div.footerP a {
+    text-decoration: none;
+    color: #565656; }
   footer div.footerP a:hover {
     color: black; }
 
