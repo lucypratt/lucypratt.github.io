@@ -372,7 +372,7 @@ nav ul.open {
 nav ul li a {
   display: block;
   background-color: #adc4dd;
-  color: #565656;
+  color: black;
   padding: .5rem 2%;
   text-decoration: none;
   font-size: .9rem;
@@ -387,7 +387,7 @@ nav ul li a:hover {
 
 nav ul li.active a {
   background-color: #7b9fcf;
-  color: #565656; }
+  color: white; }
 
 /*----------- MAIN --------------*/
 main div.parent {
