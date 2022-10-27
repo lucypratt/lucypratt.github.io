@@ -1,0 +1,28 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav ul li a {
+        font-size: .9rem;
+        padding: .5rem 1.2rem;
+}
+
+/*----------- MAIN --------------*/
+
+div.cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+/*----------- FOOTER --------------*/
+    
