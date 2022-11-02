@@ -1,0 +1,43 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+#hButton {
+        display: none;
+}
+nav {
+        position: static;
+        transform: translateX(0);
+        width: auto;
+        div {
+                display: none;
+        }
+        ul {
+                display: flex;
+                margin-left: 2%;
+        }
+        ul li a {
+                border: none;
+        }
+}
+
+
+/*----------- MAIN --------------*/
+form label.sbs {
+        padding: .4rem 0;
+
+}
+
+
+/*----------- FOOTER --------------*/
+    

@@ -1,0 +1,194 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+}
+#pageWrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+.mouseOver>.content {
+transform: translateX(-180px);
+}
+.content {
+    transition: transform 500ms ease;
+}
+
+/*----------- HEADER --------------*/
+header {
+    display: grid;
+    grid-template-columns: 100px auto 48px;
+    padding: .5rem 2vw  ;
+    background-color: $primaryColor;
+    align-items: center;
+
+    button {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        align-self: start;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        text-align: right;
+        color: white;
+    }
+}
+header h1 {margin: 0; color: white;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: $secondaryColor;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+
+    div {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        background-color: $accentColor;
+        color: white;
+    }
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    background-color: $secondaryColor;
+    color: #eee;
+
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: lighten($secondaryColor, 10%);
+    color: #333;
+}
+nav ul li.active a {
+    background-color: $accentColor;
+    color: white;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid $primaryColor;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: $accentColor;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+display: block;
+padding-top: 1rem;
+color: $accentColor;
+font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+}
+
+form input.submitB {
+    border: none;
+    background-color: $secondaryColor;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form input.submitB:hover {
+    background-color: $accentColor;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+div.thanks {
+   text-align: center;
+   margin: auto 15vw;
+   h2 {
+    margin-bottom: 1rem;
+   }
+    a {
+        display: block;
+        text-decoration: none;
+        background-color: $secondaryColor;
+        color: white;
+        border-radius: 10px;
+        margin: 1rem 4vw;
+        padding: 1rem 2%;
+     
+      
+        
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

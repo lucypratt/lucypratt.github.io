@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Swag Site Description">
+<meta name="author" content="lucy Steckler">
+
+
+<title>Swag Site By Lucy Steckler</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+    <div id="pageWrapper">
+	<div class="content">
+        <header>
+            <img src="images/backpack.png">
+     <h1>Swag Shop</h1>
+     <button id="hButton">&#9776;</button>
+        </header>
+        
+        
+    <!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+            <div>Swag Shop</div>
+            <ul >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Deals</a></li>
+                <li class="active"><a href="#">Order</a></li> 
+                <li><a href="#">Customer Reviews</a></li>    
+            </ul>
+        </nav>
+        
+        
+    <!-- CONTENT HERE -->
+        <main>
+            <h1>Order</h1>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                   <label class="top"> Full Name*<input type="text" name="fname" required></label>
+                   <label class="top"> Phone*<input type="text" name="phone" placeholder="1234561234" required ></label>
+                   <label class="top"> Email<input type="email" name="email" placeholder="text@email.com" ></label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Swag Information</legend>
+                   <label class="top"> Date Needed<input type="date" name="date"></label>
+                   <label class="top"> Business Name<input type="text" name="bname"></label>
+                   <label class="top"> Business URL<input type="url" name="url" placeholder="https://"></label>
+                   <label class="top">Color
+                    <select name="color">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="forest">Forest Green</option>
+                        <option value="gray">Gray</option>
+                        <option value="olive">Olive</option>
+                        <option value="white">White</option>
+                    </select>
+                    <label class="top"> Quantity<input type="number" name="quantity"></label>
+                </label class="top">
+                   <div>Material</div>
+                   <label class="sbs"><input type="radio" name="material" value="Leather"> Leather</label>
+                   <label class="sbs"><input type="radio" name="material" value="Canvas"> Canvas</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                   <label class="top"> Name on Card<input type="text" name="cname" required></label>
+                   <label class="top"> Card Number<input type="number" name="cnumber" required ></label>
+                   <label class="top"> Expiration Date<input type="date" name="exdate" required ></label>
+                </fieldset>
+    
+    
+                <input type="submit" value="Order My Swag" class="submitB">
+    
+            </form>
+        </main>
+        
+    <!-- FOOTER HERE -->   
+        <footer>
+            &copy; 2022 &bull; Quinn XCII INC &bull; Phone 123-555-6789 &bull; Login
+        </footer>
+
+    </div>
+</div>
+<script src="js/scripts.js"></script>
+</body>
+</html>
