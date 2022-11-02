@@ -353,7 +353,7 @@ header h1 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #F7A579;
+  background-color: #cf652b;
   width: 180px;
   position: absolute;
   top: 0;
@@ -375,15 +375,15 @@ nav ul {
 
 nav ul li a {
   display: block;
-  background-color: #F7A579;
-  color: #eee;
+  background-color: #cf652b;
+  color: white;
   padding: .5rem 0;
   text-decoration: none;
   font-size: .9rem;
   text-align: center; }
 
 nav ul li a:hover {
-  background-color: #fac5a9;
+  background-color: #db8252;
   color: #333; }
 
 nav ul li.active a {
@@ -431,7 +431,7 @@ form label.sbs {
 
 form input.submitB {
   border: none;
-  background-color: #F7A579;
+  background-color: #cf652b;
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
@@ -456,7 +456,7 @@ div.thanks {
   div.thanks a {
     display: block;
     text-decoration: none;
-    background-color: #F7A579;
+    background-color: #cf652b;
     color: white;
     border-radius: 10px;
     margin: 1rem 4vw;
