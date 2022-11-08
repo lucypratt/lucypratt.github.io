@@ -1,0 +1,49 @@
+
+
+
+/*----------- BODY --------------*/
+div#pageWrapper {
+    grid-template-areas:
+    "header header"
+    "navigation content"
+    "footer footer";
+
+    grid-template-columns: 150px auto;
+}
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+a.jump {
+    display: none;
+}
+nav {
+    height: auto;
+}
+
+
+/*----------- MAIN --------------*/
+.media {
+    display: grid;
+    grid-template-columns: 66% auto;
+    figure {
+
+        img {
+            max-width: 90%;
+        }
+    }
+    figure.middle {
+        margin: 0 1rem 0 0;
+        padding: 0;
+    }
+     
+}
+
+
+/*----------- FOOTER --------------*/
+    
