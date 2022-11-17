@@ -322,7 +322,7 @@ body {
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: #ff781f;
+  background-color: #f96400;
   color: white; }
 
 header h1 {
@@ -339,7 +339,7 @@ nav {
   bottom: 0;
   width: 100%;
   z-index: 999;
-  background-color: #ff781f; }
+  background-color: #f96400; }
 
 nav ul {
   list-style-type: none;
@@ -352,7 +352,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  background-color: #ff781f;
+  background-color: #f96400;
   color: #eee;
   width: 100%;
   text-transform: uppercase;
@@ -362,11 +362,11 @@ nav ul li a {
   text-align: center; }
 
 nav ul li a:hover {
-  background-color: #ff8739;
+  background-color: #ff7214;
   color: #333; }
 
 nav ul li.active a {
-  background-color: #ff9752;
+  background-color: #ff812d;
   color: #333; }
 
 /*----------- MAIN --------------*/
@@ -374,7 +374,7 @@ main {
   padding: 0 2%;
   min-height: 10rem; }
   main h1 {
-    color: #ff781f; }
+    color: #f96400; }
 
 div#myCards {
   display: grid;
@@ -405,8 +405,10 @@ div#myCards {
   div#myCards div.infoDiv {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    line-height: .2rem;
     padding-left: 1rem; }
+    div#myCards div.infoDiv p {
+      padding: 0;
+      margin: .25rem 1rem; }
 
 /*----------- FOOTER --------------*/
 /*----- Clearfix: Force an Element not to collapse -----*/

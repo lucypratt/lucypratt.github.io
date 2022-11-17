@@ -11,6 +11,7 @@ fetch(apiURL)
     for (i = 0; i < myList.length; i++) {
       let myImageTag = document.createElement("img");
     myImageTag.src = myList[i].photo;
+    myImageTag.alt = "hotel image";
     
     let myCaptionTag = document.createElement("figcaption");
     myCaptionTag.textContent = myList[i].name;

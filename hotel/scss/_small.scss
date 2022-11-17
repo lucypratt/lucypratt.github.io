@@ -106,8 +106,12 @@ div#myCards {
     div.infoDiv {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
-        line-height: .2rem;
+     
         padding-left: 1rem;
+        p {
+            padding: 0;
+            margin: .25rem 1rem;
+        }
     }
 }
 
