@@ -1,0 +1,125 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: $primaryColor;
+    color: white;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: $primaryColor;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+}
+nav ul li {
+    flex-basis: 33.3%;
+    
+}
+nav ul li a {
+    display: block;
+    background-color: $primaryColor;
+    color: #eee;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: lighten($primaryColor, 5%);
+    color: #333;
+}
+nav ul li.active a {
+    background-color: lighten($primaryColor, 10%);
+    color: #333;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    h1 {
+        color: $primaryColor;}
+}
+div#myCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+    figure {
+        margin: 0;
+        width: 100%;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(245,222,179,.5);
+            width: 100%;
+            padding: .5rem 2vw;
+            font-weight: 700;
+            
+        }
+    }
+    section {
+        background-color: $secondaryColor;
+        margin: .5rem;
+        margin-bottom: 1rem;
+        span {
+            display: flex;
+            align-items: center;
+            p {
+                padding: .5rem;
+            }
+        }
+       
+    }
+    div.infoDiv {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        line-height: .2rem;
+        padding-left: 1rem;
+    }
+}
+
+
+
+/*----------- FOOTER --------------*/
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
