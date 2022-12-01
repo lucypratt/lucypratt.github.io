@@ -1,0 +1,33 @@
+
+
+
+/*----------- BODY --------------*/
+div#pageWrapper {
+    grid-template-areas:
+    "header header"
+    "navigation content"
+    "footer footer";
+
+    grid-template-columns: 150px auto;
+}
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+main {
+    div#weatherforecast {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+    

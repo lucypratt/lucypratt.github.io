@@ -1,0 +1,91 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5rem 2%;
+    background-color: $headerBackground;
+   text-align: center;
+    h1 {margin: 0;
+  
+color: $primaryColor;}
+}
+
+
+
+/*----------- MAIN --------------*/
+main {
+    text-align: center;
+    grid-area: content;
+    padding: 0 2%;
+    min-height: 10rem;
+    background-color: $backgroundColor;
+    h1 {margin: 0; padding: 1rem 0 0 0;}
+    p {margin: 0; padding: .5rem 0;}
+h1 {
+    margin-bottom: .5rem;
+}
+   div#weatherforecast {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    div.dayBox {
+        
+        margin: .5rem .5rem;
+        background-color: $backgroundColor;
+        border: solid 2px black;
+        border-radius: 10px;
+        text-align: center;
+
+        h3 {
+          margin: 0;
+          padding: .5rem;
+          border-top-left-radius: 9px;
+          border-top-right-radius: 9px;
+     
+            background-color: $primaryColor;
+            color: white;
+            
+        }
+
+        p {
+            font-size: 3rem;
+        }
+    }
+   }
+    
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    grid-area: footer;
+    background-color: $headerBackground;
+    padding: .5rem 2%;
+    text-align: center;
+    color: $primaryColor;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
