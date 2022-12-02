@@ -1,0 +1,62 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+
+
+/*----------- MAIN --------------*/
+main {
+    div.blackSection {
+display: flex;
+div.formula {
+    text-align: right;
+}
+    }
+
+    div.more {
+        div.cards {
+            display: flex;
+        }
+        div.card {
+          margin: .5rem;
+        }
+    }
+
+    div.news {
+        display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .box, .graph, .text {
+                margin: .5rem;
+            }
+            .graph {
+                grid-column: 3;
+                grid-row: 1 / span 2;
+               
+            }
+                .text {
+                    grid-column: 1 / span 2;
+                }
+            p {font-size: 1rem;}
+
+           
+        
+    }
+}
+
+
+
+/*----------- FOOTER --------------*/
+    
