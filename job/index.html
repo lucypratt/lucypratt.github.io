@@ -10,7 +10,7 @@
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;300;400;700&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 
 
 
@@ -35,13 +35,17 @@
     
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul >
-            <li id="home"><a href="#">Home</a></li>
-            <li id="portfolio"><a href="#">Portfolio</a></li>
-            <li id="contact"><a href="#">Contact</a></li>
-    
-        </ul>
-    </nav>
+        <button id="navButton">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </button>
+        <ul id="navList">
+                <li id="home"><span><a href="#">HOME</a></span></li>
+                <li id="portfolio"><span><a href="#">PORTFOLIO</a></span></li>
+                <li id="contact"><span><a href="#">CONTACT</a></span></li>    
+            </ul>
+        </nav>
     
     
 <!-- CONTENT HERE -->
@@ -55,7 +59,7 @@
         <div id="blackWrapper">
             <div class="blackSection">
                 <div>
-                    <h2>Expect The Best</h2>
+                    <h2>EXPECT THE BEST</h2>
                     <p>Assertively initiate professional paradigms vis-a-vis e-business metrics. Assertively administrate parallel mindshare for effective leadership skills. Uniquely incubate B2C s</p>
                     <ul>
                         <li>Mobile First Design</li>
@@ -65,7 +69,7 @@
                     </ul>
                 </div>
                 <div class="formula">
-                    <h2>Our Formula</h2>
+                    <h2>OUR FORMULA</h2>
                     <p>development</p>
                     <p>+deployment</p>
                     <p>+design</p>
@@ -129,13 +133,24 @@
         </div>
         
         <div class="brand">
-            <img src="images/brand1.png" alt="brand">
-            <img src="images/brand2.png" alt="brand">
-            <img src="images/brand3.png" alt="brand">
-            <img src="images/brand4.png" alt="brand">
-            <img src="images/brand5.png" alt="brand">
-            <img src="images/brand6.png" alt="brand">
-
+            <figure>
+                <img src="images/brand1.png" alt="brand">
+            </figure>
+            <figure>
+                <img src="images/brand2.png" alt="brand">
+            </figure>
+            <figure>
+                <img src="images/brand3.png" alt="brand">
+            </figure>
+            <figure>
+                <img src="images/brand4.png" alt="brand">
+            </figure>
+            <figure>
+                <img src="images/brand5.png" alt="brand">
+            </figure>
+            <figure>
+                <img src="images/brand6.png" alt="brand">
+            </figure>
 
         </div>
     </main>
@@ -147,6 +162,6 @@
      </footer>
 
    </div> 
-
+   <script src="js/scripts.js"></script>
 </body>
 </html>

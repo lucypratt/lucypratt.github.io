@@ -10,17 +10,30 @@
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
+nav {
+    button {
+        display: none;
+    }
+    ul, ul.open {
+        display: flex;
+            flex-basis: 25%;
+        margin-left: 2%;}
+
+    li span {
+        position: relative;
+        left:-15px;
+    }
+}   
+    nav ul li {width: auto; margin: 0 .5rem;}
+  
     nav ul li a{padding: .5rem 1rem;}
 
 
 /*----------- MAIN --------------*/
 main {
     div.blackSection {
-display: flex;
+display:grid;
+grid-template-columns: 2fr 1fr;
 div.formula {
     text-align: right;
 }
@@ -53,6 +66,17 @@ div.formula {
 
            
         
+    }
+    div.brand {
+        align-items: center;
+        figure {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+       display: flex;
+       
     }
 }
 
