@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A site for a city">
+<meta name="author" content="Lucy Steckler">
+
+<title>City Assignment Lucy Steckler</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header>
+    <a href="index.html"><div></a><figure><img src="images/teelogo0.png" alt="Tee Timez Logo" sizes="5vw"
+        srcset="images/teelogo1.png 75w, images/teelogo2.png 150w, images/teelogo3.png 225w"></figure></div> </a>
+  <a href="index.html"><div><h1>Tee Timez</h1></div></a>
+</header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button id="navButton">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </button>
+        <ul id="navList">
+            <li class="parent"><a href="#">Locations</a>
+                <ul>
+                    <li><a href="#">Mesa</a>
+                    <li><a href="#">Phoenix</a>
+                </ul>
+                <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact Us</a></li>    
+            </ul>
+        </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <div class="contact">
+            <div><h1> Contact Tee Timez</h1>
+                <p>If you'd like to take a tour of our facility and see a demo, send us a quick message! Feel free to also reach out with questions.</p></div>
+            <div> <form method="get" action="thanks.html">
+                <fieldset>
+                   <label class="top"> Full Name*<input type="text" name="fname" placeholder="Full Name" required></label>
+                   <label class="top"> Phone*<input type="text" name="phone" placeholder="1234561234" required ></label>
+                   <label class="top"> Email<input type="email" name="email" placeholder="text@email.com" ></label>
+                </fieldset>
+    
+                <input type="submit" value="Send Message To Tee Timez" class="submitB">
+    
+            </form></div>
+        </div>
+       
+       
+
+       
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2022 &bull; Tee Timez 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

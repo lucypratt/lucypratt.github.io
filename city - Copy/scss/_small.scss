@@ -1,0 +1,189 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-image: url("../images/header.jpg");
+    color: white;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+    background-color: $secondaryColor;
+   button {
+    height: 44px;
+    width: 44px;
+    background: none;
+    border: none;
+    position: relative;
+    .line {
+        position: absolute;
+        height: 2px;
+        width: 60%;
+        left: 20%;
+        background-color: white;
+        transition: all .3s ease;
+    }
+    .top {
+        top: 29%;
+    }
+    .middle {top: 48%;}
+    .bottom {top: 67%;}
+   }
+
+   #navButton.open {
+    .top {
+        transform: rotate(45deg);
+        top: 48%;
+    }
+    .middle, .bottom {
+        transform: rotate(-45deg);
+        top: 48%;
+    }
+   }
+}
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.open {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    background-color: $secondaryColor;
+    color:white;
+ 
+    padding: .5rem 2%;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: left;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: $accentColor;
+    color: white;
+}
+nav ul li.active a {
+    background-color: $accentColor;
+    color: white;
+}
+/*----------- MAIN --------------*/
+main {
+    
+  
+
+    .swiper-wrapper {
+        
+        margin-bottom: 15px;
+    }
+
+
+    .swiper {
+        picture {
+            width: 100%;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+        p {
+            margin: 0;
+            padding: .4rem 2vw;
+            background-color: rgba(204,102,0,0.5);
+            color: white;
+            text-align: center;
+            transform: TranslateY(-100%);
+            width: 100%;
+        }
+
+    
+    }
+
+    div.cards {
+        display: grid;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        div:nth-child(1) {
+            background-image: url("../images/lodgeimg.jpg");
+            
+        }
+        div:nth-child(1) a {
+            background-color: #fd5602;
+        }
+        div:nth-child(2) {
+            background-image: url("../images/walk.jpg");
+            
+        }
+        div:nth-child(2) a {
+            background-color: #fe6e00;
+        }
+        div:nth-child(3) {
+            background-image: url("../images/pass.jpg");
+            
+        }
+        div:nth-child(3) a {
+            background-color: $secondaryColor;
+        }
+        div:nth-child(4) {
+            background-image: url("../images/foodimg.jpg");
+            
+        }
+        div:nth-child(4) a {
+            background-color: $accentColor;
+        }
+        div a {
+            display: block;
+            width: 100%;
+            height: 300px;
+            text-decoration: none;
+            padding: 1rem 2%;
+            color: white;
+            transition: all .5s ease-in;
+           
+            
+        }
+        div a:hover {
+            background: none;
+            text-shadow: 0 0 4px black;
+            
+        }
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $menuColor;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
