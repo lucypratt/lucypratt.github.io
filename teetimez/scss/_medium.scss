@@ -1,0 +1,70 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+   
+nav {
+    background-color: $menuColor;
+    ul {
+        display: flex;
+        margin-left: 2%;
+    }
+    
+}
+nav ul li {width: auto;}
+nav ul li a{padding: .5rem 1rem;
+transition: background .3s linear;}
+nav button {
+display: none;
+}
+#navList li.parent > a:after {
+    content: "\25BC";
+    font-size: .75rem;
+    color: rgba(255,255,255,0.5);
+    float: left;
+}
+nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: darken($menuColor, 5%);
+    border: none;
+    width: 14rem;
+    position: absolute;
+    left: -999rem; 
+    z-index: 99;
+}
+    
+ul li ul li {
+    border-right: none;
+
+}
+ul li:hover ul {
+    left: auto;
+    margin-left: 0;
+}
+
+li.active a {
+    background-color: $accentColor;
+}
+/*----------- MAIN --------------*/
+
+
+main {
+    div.cards {
+        grid-template-columns: 1fr 1fr;
+    
+    }
+}
+
+
+
+/*----------- FOOTER --------------*/
+    
