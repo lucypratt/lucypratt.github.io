@@ -489,6 +489,31 @@ main div.cards {
       display: block;
       text-decoration: none;
       color: #ffffff; }
+main div.memberships {
+  margin-top: 2rem; }
+  main div.memberships h1, main div.memberships p, main div.memberships h3, main div.memberships button {
+    margin: .5rem 4%; }
+  main div.memberships .content1 {
+    max-width: 50rem; }
+  main div.memberships .content2 {
+    max-width: 70rem; }
+  main div.memberships button {
+    border: none;
+    background-color: #36D99D;
+    color: white;
+    padding: 1rem 2rem; }
+main div.location h1, main div.location p, main div.location h3, main div.location button {
+  margin: .5rem 2%; }
+main div.location section.gallery figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 66%;
+  position: relative;
+  margin: 1rem 0; }
+  main div.location section.gallery figure img {
+    width: 100%;
+    height: auto;
+    position: absolute; }
 
 /*----------- FOOTER --------------*/
 footer {
