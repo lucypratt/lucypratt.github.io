@@ -23,14 +23,18 @@
 </head>
 <body>
 <!-- HEADER HERE -->
-<header>
-    <a href="https://lucypratt.github.io/teetimez/index.html"><div></a><figure><img src="images/teelogo0.png" alt="Tee Timez Logo" sizes="5vw"
-        srcset="images/teelogo1.png 75w, images/teelogo2.png 150w, images/teelogo3.png 225w"></figure></div> </a>
-  <a href="https://lucypratt.github.io/teetimez/index.html"><div><h1>Tee Timez</h1></div></a>
-</header>
+<div class="headerWrapper">
+    <header>
+        <a href="/teetimez/index.html"><div></a><figure><img src="images/teelogo0.png" alt="Tee Timez Logo" sizes="5vw"
+            srcset="images/teelogo1.png 150w, images/teelogo2.png 225w, images/teelogo3.png 300w"></figure></div> </a>
+      <a href="/teetimez/index.html"><div><h1>Tee Timez</h1></div></a>
+    </header>
+</div>
+
     
     
 <!-- NAVIGATION HERE -->
+<div class="navWrapper">
     <nav class="clearfix">
         <button id="navButton">
             <span class="line top"></span>
@@ -38,15 +42,12 @@
             <span class="line bottom"></span>
         </button>
         <ul id="navList">
-            <li class="parent"><a href="/teetimez/locations.html">Locations</a>
-                <ul>
-                    <li><a href="#">Mesa</a>
-                    <li><a href="#">Phoenix</a>
-                </ul>
+            <li><a href="/teetimez/locations.html">Locations</a>
                 <li><a href="memberships.html">Memberships</a></li>
-            <li><a href="/teetimez/contact.html">Contact Us</a></li>    
+            <li><a href="contact.html">Contact Us</a></li>    
             </ul>
         </nav>
+</div>
     
     
 <!-- CONTENT HERE -->
@@ -94,39 +95,49 @@
    
   </div>
 
-  <h1>Plan Your Visit</h1>
-        <div class="cards">
-            <div>
-                <a href="">
-                    <img src="images/lodge.png" alt="lodge">
-                    <h3>Places To Stay</h3>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <img src="images/walk.png" alt="walk">
-                    <h3>Walk the Red Line</h3>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <img src="images/pass.png" alt="pass">
-                    <h3>Pass to the City</h3>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <img src="images/food.png" alt="food">
-                    <h3>Fine Dining</h3>
-                </a>
-            </div>
-        </div>
+  <div class="homeContent">
+    <div><h3>Membership Based 24 Hour Private Golf Studio</h3>
+        <p>We are here to offer Top of the line Golf Technology to the everyday golfer. Powered by Golfzon, we are able to bring you a premium indoor golf experience to fit all of your needs.   Experience the driving range like never before to really dial in your game.  Watch the video playback of your swing and see all the data you need to make informed decisions about your game.  Bring three buddies and play full rounds on world famous courses from your tee shot down to the smallest putts.  A Tee Timez membership gives you the very best in golf simulation technology, new challenging and exciting  courses to play – all in a 24/7, comfortable, climate controlled environment. </p></div>
+<div><figure><img src="images/fullwidth4.jpg" alt="golf and tee"></figure></div>
+
+  </div>
+
+  <div class="home">
+<div>
+    <h3>Contact Us</h3>
+    <ul>
+        <li id="phone"><span><a href="#">801-369-8047</a></span></li>
+        <li id="email"><span><a href="#">email@teetimez.com</a></span></li>
+        <li id="visit"><span><a href="https://goo.gl/maps/bDLkdCyEDqqxSeW77">2716 N Ogden Rd, 103, Mesa, Az 85215</a></span></li>
+    </ul>
+</div>
+<div>
+    <h3>Visit Us</h3>
+    <figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.3990763180195!2d-111.7414686848003!3d33.46495928076974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba579eebe3f75%3A0x8a7c94e1e1c0cb13!2sTee%20Timez!5e0!3m2!1sen!2sus!4v1670993205544!5m2!1sen!2sus" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </figure>
+
+</div>
+
+  </div>
+  <div class="homeContent">
+    <div><figure><img src="images/fullwidth3.jpg" alt="golf and tee"></figure></div>
+    <div><h3>Powered by Golfzon</h3>
+        <p>Golfzon's patented Swing Plate is the only one of its kind. Hydraulics power the swing plate to raise and tilt to match the lies you would find on the actual golf course  </p></div>
+
+
+  </div>
+
+  
     </main>
     
 <!-- FOOTER HERE -->   
+<div class="footerWrapper">
     <footer>
         &copy; 2022 &bull; Tee Timez 
     </footer>
+
+</div> 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>

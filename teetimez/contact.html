@@ -23,14 +23,17 @@
 </head>
 <body>
 <!-- HEADER HERE -->
-<header>
-    <a href="index.html"><div></a><figure><img src="images/teelogo0.png" alt="Tee Timez Logo" sizes="5vw"
-        srcset="images/teelogo1.png 75w, images/teelogo2.png 150w, images/teelogo3.png 225w"></figure></div> </a>
-  <a href="index.html"><div><h1>Tee Timez</h1></div></a>
-</header>
+<div class="headerWrapper">
+    <header>
+        <a href="/teetimez/index.html"><div></a><figure><img src="images/teelogo0.png" alt="Tee Timez Logo" sizes="5vw"
+            srcset="images/teelogo1.png 150w, images/teelogo2.png 225w, images/teelogo3.png 300w"></figure></div> </a>
+      <a href="/teetimez/index.html"><div><h1>Tee Timez</h1></div></a>
+    </header>
+</div>
     
     
 <!-- NAVIGATION HERE -->
+<div class="navWrapper">
     <nav class="clearfix">
         <button id="navButton">
             <span class="line top"></span>
@@ -38,15 +41,13 @@
             <span class="line bottom"></span>
         </button>
         <ul id="navList">
-            <li class="parent"><a href="/teetimez/locations.html">Locations</a>
-                <ul>
-                    <li><a href="#">Mesa</a>
-                    <li><a href="#">Phoenix</a>
-                </ul>
+            <li><a href="/teetimez/locations.html">Locations</a>
                 <li><a href="memberships.html">Memberships</a></li>
-            <li><a href="contact.html">Contact Us</a></li>    
+            <li class="active"><a href="contact.html">Contact Us</a></li>    
             </ul>
         </nav>
+</div>
+    
     
     
 <!-- CONTENT HERE -->
@@ -72,9 +73,12 @@
     </main>
     
 <!-- FOOTER HERE -->   
+<div class="footerWrapper">
     <footer>
         &copy; 2022 &bull; Tee Timez 
     </footer>
+
+</div> 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>

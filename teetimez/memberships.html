@@ -23,14 +23,17 @@
 </head>
 <body>
 <!-- HEADER HERE -->
-<header>
-    <a href="index.html"><div></a><figure><img src="images/teelogo0.png" alt="Tee Timez Logo" sizes="5vw"
-        srcset="images/teelogo1.png 75w, images/teelogo2.png 150w, images/teelogo3.png 225w"></figure></div> </a>
-  <a href="index.html"><div><h1>Tee Timez</h1></div></a>
-</header>
+<div class="headerWrapper">
+    <header>
+        <a href="/teetimez/index.html"><div></a><figure><img src="images/teelogo0.png" alt="Tee Timez Logo" sizes="5vw"
+            srcset="images/teelogo1.png 150w, images/teelogo2.png 225w, images/teelogo3.png 300w"></figure></div> </a>
+      <a href="/teetimez/index.html"><div><h1>Tee Timez</h1></div></a>
+    </header>
+</div>
     
     
 <!-- NAVIGATION HERE -->
+<div class="navWrapper">
     <nav class="clearfix">
         <button id="navButton">
             <span class="line top"></span>
@@ -38,15 +41,12 @@
             <span class="line bottom"></span>
         </button>
         <ul id="navList">
-            <li class="parent"><a href="/teetimez/locations.html">Locations</a>
-                <ul>
-                    <li><a href="#">Mesa</a>
-                    <li><a href="#">Phoenix</a>
-                </ul>
-            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="/teetimez/locations.html">Locations</a>
+                <li class="active"><a href="memberships.html">Memberships</a></li>
             <li><a href="contact.html">Contact Us</a></li>    
             </ul>
         </nav>
+</div>
     
     
 <!-- CONTENT HERE -->
@@ -115,10 +115,10 @@
 
             <div class="content2">
                 
-               <div>
+              
                 <h3>Corporate Memberships</h3>
             <p>Corporate Memberships are also available at custom prices. Contact us, or schedule a Free Demo so we can structure a custom plan that meets your needs</p>
-            <button>BOOK A TOUR</button>
+            <a class="tour" href="/teetimez/contact.html">BOOK A TOUR</a>
             <h3>Who Can Benefit From a Tee Timez Golf Membership?</h3>
             <p>Anybody can benefit from more golf practice! Here are the main reasons to sign up for a golf membership with Tee Timez:
                 Practice your way, at a time that’s convenient for you. We’re open 24/7 so there are no lines and bad weather will never stop play.
@@ -128,7 +128,7 @@
                 With a Tee Timez Unlimited package, there’s no cap on how many hours you can play, so the more practice you log, the more value you get out of your membership.
                 Contact Tee Timez today to tour our facility or to find out more about our membership packages.</p>
 
-               </div> 
+        
                
             </div>
             
@@ -140,9 +140,12 @@
     </main>
     
 <!-- FOOTER HERE -->   
+<div class="footerWrapper">
     <footer>
         &copy; 2022 &bull; Tee Timez 
     </footer>
+
+</div> 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>

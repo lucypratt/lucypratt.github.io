@@ -2,6 +2,9 @@ header, nav, main, footer {
         
         margin:auto;
 }
+main, nav, header, footer {
+        max-width: 70rem;
+}
 
 /*----------- BODY --------------*/
 

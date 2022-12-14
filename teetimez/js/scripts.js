@@ -1,3 +1,4 @@
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -23,3 +24,7 @@ const swiper = new Swiper('.swiper', {
       pn.classList.toggle('open');
   })
 
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy",
+    threshold: 0
+   });

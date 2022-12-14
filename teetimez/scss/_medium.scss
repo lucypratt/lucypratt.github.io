@@ -58,9 +58,26 @@ li.active a {
 
 
 main {
+
+    div.memberships {
+        a.tour {
+            max-width: 30%;
+        }
+    }
     div.cards {
         grid-template-columns: 1fr 1fr;
     
+    }
+    div.homeContent {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    div.home {
+        grid-template-columns: 1fr 1fr;
+       
+        iframe {
+            height: 300px;
+        }
     }
 }
 

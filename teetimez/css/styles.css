@@ -321,43 +321,46 @@ body {
   font-family: "Poppins", sans-serif; }
 
 /*----------- HEADER --------------*/
+div.headerWrapper {
+  background-color: #1B2957; }
+
 header {
   display: flex;
-  padding: .5rem 2%;
-  background-color: #1B2957; }
+  align-items: center; }
   header h1 {
     color: #ffffff; }
   header a {
     text-decoration: none; }
 
 /*----------- NAVIGATION --------------*/
-nav {
+div.navWrapper {
   background-color: #36D99D; }
-  nav button {
-    height: 44px;
-    width: 44px;
-    background: none;
-    border: none;
-    position: relative; }
-    nav button .line {
-      position: absolute;
-      height: 2px;
-      width: 5%;
-      left: 2%;
-      background-color: white;
-      transition: all .3s ease; }
-    nav button .top {
-      top: 29%; }
-    nav button .middle {
-      top: 48%; }
-    nav button .bottom {
-      top: 67%; }
-  nav #navButton.open .top {
-    transform: rotate(45deg);
+
+nav button {
+  height: 44px;
+  width: 44px;
+  background: none;
+  border: none;
+  position: relative; }
+  nav button .line {
+    position: absolute;
+    height: 2px;
+    width: 5%;
+    left: 2%;
+    background-color: white;
+    transition: all .3s ease; }
+  nav button .top {
+    top: 29%; }
+  nav button .middle {
     top: 48%; }
-  nav #navButton.open .middle, nav #navButton.open .bottom {
-    transform: rotate(-45deg);
-    top: 48%; }
+  nav button .bottom {
+    top: 67%; }
+nav #navButton.open .top {
+  transform: rotate(45deg);
+  top: 48%; }
+nav #navButton.open .middle, nav #navButton.open .bottom {
+  transform: rotate(-45deg);
+  top: 48%; }
 
 nav ul {
   display: none;
@@ -389,6 +392,36 @@ nav ul li.active a {
   color: #1B2957; }
 
 /*----------- MAIN --------------*/
+main div.homeContent {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr; }
+  main div.homeContent h3, main div.homeContent p {
+    margin: .5rem 2%; }
+  main div.homeContent figure {
+    max-width: 100%; }
+    main div.homeContent figure img {
+      width: 100%; }
+main div.home {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #1B2957;
+  padding: 1rem;
+  color: #ffffff; }
+  main div.home a {
+    text-decoration: none;
+    color: #ffffff; }
+  main div.home ul li {
+    margin: 1rem 0;
+    padding-left: 1rem; }
+  main div.home ul li#phone {
+    list-style-image: url("../images/call.png"); }
+  main div.home ul li#email {
+    list-style-image: url("../images/email.png"); }
+  main div.home ul li#visit {
+    list-style-image: url("../images/visit.png"); }
+  main div.home iframe {
+    height: 100%; }
 main .swiper-wrapper {
   margin-bottom: 15px; }
 main .swiper-slide {
@@ -491,35 +524,42 @@ main div.cards {
       color: #ffffff; }
 main div.memberships {
   margin-top: 2rem; }
-  main div.memberships h1, main div.memberships p, main div.memberships h3, main div.memberships button {
+  main div.memberships h1, main div.memberships p, main div.memberships h3, main div.memberships a {
     margin: .5rem 4%; }
-  main div.memberships .content1 {
-    max-width: 50rem; }
-  main div.memberships .content2 {
-    max-width: 70rem; }
-  main div.memberships button {
-    border: none;
+  main div.memberships a.tour {
+    text-decoration: none;
+    display: block;
     background-color: #36D99D;
     color: white;
-    padding: 1rem 2rem; }
-main div.location h1, main div.location p, main div.location h3, main div.location button {
-  margin: .5rem 2%; }
-main div.location section.gallery figure {
-  width: 100%;
-  height: 0;
-  padding-bottom: 66%;
-  position: relative;
-  margin: 1rem 0; }
-  main div.location section.gallery figure img {
-    width: 100%;
-    height: auto;
-    position: absolute; }
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+main div.location {
+  margin-top: 2rem; }
+  main div.location h1, main div.location p, main div.location h3, main div.location button {
+    margin: .5rem 2%; }
+  main div.location section.gallery {
+    margin: .5rem 2%; }
+    main div.location section.gallery figure {
+      width: 100%;
+      height: 0;
+      padding-bottom: 66%;
+      position: relative;
+      margin: 1rem 0; }
+      main div.location section.gallery figure img {
+        width: 100%;
+        height: auto;
+        position: absolute; }
 
 /*----------- FOOTER --------------*/
-footer {
+div.footerWrapper {
   background-color: #36D99D;
+  margin-top: 2rem; }
+
+footer {
   padding: .5rem 2%;
-  text-align: center; }
+  text-align: center;
+  color: #ffffff; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -647,14 +687,25 @@ footer {
     background-color: #ffffff; }
 
   /*----------- MAIN --------------*/
+  main div.memberships a.tour {
+    max-width: 30%; }
   main div.cards {
     grid-template-columns: 1fr 1fr; }
+  main div.homeContent {
+    grid-template-columns: 1fr 1fr; }
+  main div.home {
+    grid-template-columns: 1fr 1fr; }
+    main div.home iframe {
+      height: 300px; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, nav, main, footer {
     margin: auto; }
+
+  main, nav, header, footer {
+    max-width: 70rem; }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
