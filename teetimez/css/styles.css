@@ -374,7 +374,7 @@ nav ul.open {
 nav ul li a {
   display: block;
   background-color: #36D99D;
-  color: #ffffff;
+  color: black;
   padding: .5rem 2%;
   text-decoration: none;
   font-size: .9rem;
@@ -559,7 +559,7 @@ div.footerWrapper {
 footer {
   padding: .5rem 2%;
   text-align: center;
-  color: #ffffff; }
+  color: black; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
